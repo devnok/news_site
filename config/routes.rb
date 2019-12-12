@@ -1,6 +1,8 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :stories
+  resources :sections
   namespace :admin do
       resources :users
 

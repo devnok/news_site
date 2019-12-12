@@ -1,24 +1,17 @@
-# README
+#NewsSite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails app for generating newspaper site
 
-Things you may want to cover:
+## Tables
 
-* Ruby version
+### Section
 
-* System dependencies
+name: string
 
-* Configuration
+### Story
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-title:string
+-subtitle:string
+-quote
+-author
+-body:text

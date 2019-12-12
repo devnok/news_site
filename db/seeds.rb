@@ -5,4 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create!(first_name: "seonung", last_name: "ha", email: "ha819ha.dev@gmail.com", password: "itis1234", password_confirmation: "itis1234", admin: true)
+#User.create!(first_name: "seonung", last_name: "ha", email: "ha819ha.dev@gmail.com", password: "itis1234", password_confirmation: "itis1234", admin: true)
+
+sections = %w[1면 정치 경제 사회 문화 연예]
+
+sections.each do |section|
+    Section.where(name: section).first_or_create
+end

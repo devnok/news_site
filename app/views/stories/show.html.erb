@@ -1,0 +1,30 @@
+<div class="page-header">
+  <%= link_to stories_path, class: 'btn btn-default' do %>
+    All Stories
+  <% end %>
+  <%= link_to edit_story_path(@story), class: 'btn btn-primary' do %>
+    Edit
+  <% end %>
+  <h1>Show story</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Title:</dt>
+  <dd><%= @story.title %></dd>
+
+  <dt>Subtitle:</dt>
+  <dd><%= @story.subtitle %></dd>
+
+  <dt>Quote:</dt>
+  <dd><%= @story.quote %></dd>
+
+  <dt>Author:</dt>
+  <dd><%= @story.author %></dd>
+
+  <dt>Body:</dt>
+  <dd><%= @story.body %></dd>
+
+  <dt>Section:</dt>
+  <dd><%= @story.section %></dd>
+
+</dl>
